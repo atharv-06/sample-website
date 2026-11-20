@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Zarin — Irani Cafe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <div class="brand-mark">Z</div>
+      <div class="brand-name">Cafe Zarin<span>IRANI CAFE · EST. 1962</span></div>
+    </div>
+    <nav class="links">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Inside</a>
+      <a href="#notes">Notes</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="nav-cta" onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})">Reserve a table</button>
+    <button class="menu-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="checker"></div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">NAGALA PARK · OPEN 7AM – 10PM</span>
+      <h1>Chai first.<br><em>Everything</em> else after.</h1>
+      <p class="lede">Bentwood chairs, marble-top tables and a kettle that hasn't stopped since 1962. Cafe Zarin keeps the old Irani ritual alive — bun maska, Osmania biscuits, and tea brewed the way our grandfather taught us.</p>
+      <div class="hero-ctas">
+        <button class="btn-solid" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">See the menu</button>
+        <button class="btn-ghost" onclick="document.getElementById('visit').scrollIntoView({behavior:'smooth'})">Find us</button>
+      </div>
+    </div>
+    <div class="steam-card">
+      <div class="glass">
+        <img src="images/image.png" alt="Irani Chai">
+      </div>
+      <div class="cap">HOUSE SPECIAL</div>
+      <h3>Irani Chai</h3>
+      <p>Rose, saffron and black tea leaves, poured strong — the way it's always been.</p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>BUN MASKA</span><span>·</span><span>OSMANIA BISCUITS</span><span>·</span><span>IRANI CHAI</span><span>·</span><span>KEEMA PAV</span><span>·</span><span>CARAMEL CUSTARD</span><span>·</span><span>MAWA CAKE</span><span>·</span>
+    <span>BUN MASKA</span><span>·</span><span>OSMANIA BISCUITS</span><span>·</span><span>IRANI CHAI</span><span>·</span><span>KEEMA PAV</span><span>·</span><span>CARAMEL CUSTARD</span><span>·</span><span>MAWA CAKE</span><span>·</span>
+  </div>
+</div>
+
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">THE MENU</span>
+        <h2>Same recipes, three generations running.</h2>
+      </div>
+      <p>Prices are for one. Everything is made fresh in-house, in small batches, every morning.</p>
+    </div>
+
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" data-tab="chai">Chai &amp; Bakes</button>
+      <button class="menu-tab" data-tab="snacks">Snacks</button>
+      <button class="menu-tab" data-tab="meals">Meals</button>
+    </div>
+
+    <div class="menu-panels">
+      <div class="menu-panel active" id="panel-chai">
+        <div class="menu-item"><div><div class="mi-name">Irani Chai</div><div class="mi-desc">Rose, saffron, black tea leaves, condensed milk.</div></div><div class="mi-price">₹40</div></div>
+        <div class="menu-item"><div><div class="mi-name">Bun Maska</div><div class="mi-desc">Soft bun, thick layer of butter, toasted lightly.</div></div><div class="mi-price">₹60</div></div>
+        <div class="menu-item"><div><div class="mi-name">Osmania Biscuit</div><div class="mi-desc">Sweet-salty shortbread, baked fresh each morning.</div></div><div class="mi-price">₹30</div></div>
+        <div class="menu-item"><div><div class="mi-name">Mawa Cake</div><div class="mi-desc">Cardamom-scented, dense and buttery.</div></div><div class="mi-price">₹55</div></div>
+        <div class="menu-item"><div><div class="mi-name">Caramel Custard</div><div class="mi-desc">Old-fashioned steamed custard, served cold.</div></div><div class="mi-price">₹70</div></div>
+        <div class="menu-item"><div><div class="mi-name">Ginger Chai</div><div class="mi-desc">Same base, extra ginger, no rose.</div></div><div class="mi-price">₹40</div></div>
+      </div>
+      <div class="menu-panel" id="panel-snacks">
+        <div class="menu-item"><div><div class="mi-name">Mirchi Bhaji</div><div class="mi-desc">Battered green chilli, stuffed with spiced potato.</div></div><div class="mi-price">₹50</div></div>
+        <div class="menu-item"><div><div class="mi-name">Khari Biscuit</div><div class="mi-desc">Flaky puff pastry, served with a side of chai.</div></div><div class="mi-price">₹25</div></div>
+        <div class="menu-item"><div><div class="mi-name">Vada Pav</div><div class="mi-desc">Spiced potato fritter, garlic chutney, soft pav.</div></div><div class="mi-price">₹45</div></div>
+        <div class="menu-item"><div><div class="mi-name">Bread Pattice</div><div class="mi-desc">Crumbed and fried, potato-pea filling.</div></div><div class="mi-price">₹55</div></div>
+      </div>
+      <div class="menu-panel" id="panel-meals">
+        <div class="menu-item"><div><div class="mi-name">Keema Pav</div><div class="mi-desc">Minced mutton curry, slow-cooked, with soft pav.</div></div><div class="mi-price">₹160</div></div>
+        <div class="menu-item"><div><div class="mi-name">Berry Pulao</div><div class="mi-desc">Fragrant rice, chicken, barberries, house spice mix.</div></div><div class="mi-price">₹210</div></div>
+        <div class="menu-item"><div><div class="mi-name">Akuri on Toast</div><div class="mi-desc">Parsi-style spiced scrambled eggs, buttered toast.</div></div><div class="mi-price">₹120</div></div>
+        <div class="menu-item"><div><div class="mi-name">Dhansak</div><div class="mi-desc">Lentil-vegetable stew, caramelised rice, served weekends.</div></div><div class="mi-price">₹190</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">INSIDE THE CAFE</span>
+        <h2>Checkerboard floors, marble tables, no rush.</h2>
+      </div>
+      <p>A look at the room before you walk in.</p>
+    </div>
+    <div class="gallery-filters">
+      <button class="gfilter active" data-filter="all">All</button>
+      <button class="gfilter" data-filter="interior">Interior</button>
+      <button class="gfilter" data-filter="food">Food</button>
+      <button class="gfilter" data-filter="people">People</button>
+    </div>
+    <div class="gallery-grid">
+      <div class="gtile g1" data-cat="food">
+    <img src="images/Bun Maska.png" alt="Bun Maska">
+    <!-- <span>Bun Maska</span> -->
+    </div>
+
+    <div class="gtile g2" data-cat="food">
+      <img src="images/Osmania Biscuits.png" alt="Osmania Biscuits">
+      <!-- <span>Osmania Biscuits</span> -->
+    </div>
+      <div class="gtile g3" data-cat="interior"><span>The main hall</span></div>
+      <div class="gtile g4" data-cat="people"><span>Sunday regulars</span></div>
+      <div class="gtile g5" data-cat="food"><span>Irani Chai</span></div>
+      <div class="gtile g6" data-cat="interior"><span>The counter</span></div>
+      <div class="gtile g7" data-cat="interior"><span>Corner table, 7am</span></div>
+      <div class="gtile g8" data-cat="people"><span>Behind the bhatti</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="notes" id="notes">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">FROM THE GUEST BOOK</span>
+        <h2>What regulars keep coming back for.</h2>
+      </div>
+      <p>Actual notes, left at the counter.</p>
+    </div>
+    <div class="note-track">
+      <div class="note-card"><p>"The chai tastes the same as it did when I was eight. That's rare these days."</p><div class="note-who">— Farida, Nagala Park</div></div>
+      <div class="note-card"><p>"Best bun maska in Kolhapur, full stop. Butter to bread ratio is unmatched."</p><div class="note-who">— Aniket R.</div></div>
+      <div class="note-card"><p>"I bring every out-of-town guest here first. Never once disappointed."</p><div class="note-who">— Shraddha P.</div></div>
+      <div class="note-card"><p>"Slow mornings, warm light, no wifi pressure to leave. Exactly what a cafe should be."</p><div class="note-who">— Imran K.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="visit">
+  <div class="wrap visit">
+    <div>
+      <span class="kicker">VISIT US</span>
+      <h2>Nagala Park, Kolhapur</h2>
+      <p style="margin-top:14px; color:#5a5142; font-size:14.5px; max-width:380px;">Near the old clock tower, two doors past the flower stall. Street parking on the left side, mornings only.</p>
+      <div class="hours-list">
+        <div class="hours-row"><span class="d">Mon – Fri</span><span>7:00 AM – 10:00 PM</span></div>
+        <div class="hours-row"><span class="d">Saturday</span><span>7:00 AM – 10:30 PM</span></div>
+        <div class="hours-row"><span class="d">Sunday</span><span>8:00 AM – 10:00 PM</span></div>
+      </div>
+    </div>
+    <div class="map-box">
+            <iframe
+                src="https://www.google.com/maps?q=16.7082978,74.2323992&z=17&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="reserve-box">
+    <h2>Reserve a table</h2>
+    <p>For groups of 5 or more. Walk-ins always welcome otherwise.</p>
+    <form id="reserveForm">
+      <div class="field"><label for="name">Name</label><input id="name" required placeholder="Your name"></div>
+      <div class="field"><label for="phone">Phone</label><input id="phone" required placeholder="10-digit number"></div>
+      <div class="field"><label for="date">Date</label><input id="date" type="date" required></div>
+      <div class="field"><label for="time">Time</label><input id="time" type="time" required></div>
+      <div class="field full"><label for="guests">Guests</label>
+        <select id="guests">
+          <option>2 people</option><option>3 people</option><option>4 people</option><option>5 people</option><option>6+ people</option>
+        </select>
+      </div>
+      <button class="submit-btn" type="submit">Confirm reservation</button>
+      <div class="confirm" id="confirmMsg">Table reserved — we'll text a confirmation shortly.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h4>Cafe Zarin</h4>
+      <p style="font-size:13.5px; max-width:280px; color:rgba(239,230,214,0.6);">An Irani cafe on Nagala Park, Kolhapur, serving chai and old-world comfort food since 1962.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Inside the cafe</a>
+      <a href="#notes">Guest book</a>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <a href="#visit">Nagala Park, Kolhapur</a>
+      <a href="tel:+911234567890">+91 12345 67890</a>
+      <a href="#reserve">Reserve a table</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Cafe Zarin Irani Cafe</span>
+    <span>Concept design</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+>
